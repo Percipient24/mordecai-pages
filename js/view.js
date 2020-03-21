@@ -1,7 +1,7 @@
 (function() {
   "use strict";
   jQuery(function($) {
-    fetch("/mordecai-pages/json/api-v1-timemap-1.json").then(function(response) {
+    fetch("/mordechi-pages/json/api-v1-timemap-1.json").then(function(response) {
       response.json().then(function(json) {
         json.data.fields = Object.keys(json.data)
         var dataset = new recline.Model.Dataset({ records: json.data });
